@@ -30,24 +30,21 @@ public final class Main {
     public static void main(String[] args) {
         
         //Constantes
-        int NUMERO_MIN = 0;
-        int NUMERO_MAX = 9;        
+        int NUMERO_MIN = 1;
+        int NUMERO_MAX = 49;        
         int CUENTA_FIN = 6;
         
         //Variables
         int numero = 1;
         int numeroRND;
                
-        //Random
-        numeroRND = RND.nextInt(NUMERO_MAX - NUMERO_MIN + 1) + NUMERO_MIN;
-      
+       
     while ( numero <= CUENTA_FIN){
         
-            System.out.printf("Número %d ...: %d%n",numero, numeroRND);
+            numeroRND = RND.nextInt(NUMERO_MAX - NUMERO_MIN + 1) + NUMERO_MIN;
+        
+            System.out.printf("Número %d ...: %d%n",numero + 1, numeroRND);
             
-            if (numeroRND == numeroRND) {
-                numeroRND = RND.nextInt(NUMERO_MAX - NUMERO_MIN + 1) + NUMERO_MIN;
-            }
         
         //Actualización
         numero++;
